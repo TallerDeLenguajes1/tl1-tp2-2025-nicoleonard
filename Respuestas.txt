@@ -1,0 +1,5 @@
+1)f) 
+i)No se puede ver el archivo tp2_1_2.c porque es un cambio que se hizo en otra rama.
+ii)Al volver a la rama main y agregar un commit, se aprecia que la rama main tiene cambios que no estan registrados en la rama Opcion_2.
+iii)Al hacer el merge, parado en la rama main, se traen los cambios de la rama Opcion_2 a la rama actual.
+
