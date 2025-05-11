@@ -44,3 +44,13 @@ void listarPCs(compu listaCompu[], int cantidadElementos){
     }   
 }
 
+void mostrarMasVieja(compu listaCompu[], int cantidadElementos){
+    int indicePCVieja;
+    for(int i=0; i<cantidadElementos-1; i++){
+        if(listaCompu[i].anio <= listaCompu[i+1].anio){
+            indicePCVieja=i;
+        }
+    }
+    compu listaMostrar[0]=listaCompu[indicePCVieja];
+    listarPCs(listaMostrar,1);
+}
