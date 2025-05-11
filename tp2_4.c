@@ -54,3 +54,14 @@ void mostrarMasVieja(compu listaCompu[], int cantidadElementos){
     compu listaMostrar[0]=listaCompu[indicePCVieja];
     listarPCs(listaMostrar,1);
 }
+
+void mostrarMasVeloz(compu listaCompu[], int cantidadElementos){
+    int indicePCVieja;
+    for(int i=0; i<cantidadElementos-1; i++){
+        if(listaCompu[i].velocidad <= listaCompu[i+1].velocidad){
+            indicePCVieja=i;
+        }
+    }
+    compu listaMostrar[0]=listaCompu[indicePCVieja];
+    listarPCs(listaMostrar,1);
+}
